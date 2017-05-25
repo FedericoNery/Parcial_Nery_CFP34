@@ -12,31 +12,33 @@ print(ejercicio3("PEPE")) #[]
 print(ejercicio3(2.5)) #[]
 """
 
-class ejercicio3TestCase(unittest.testCase):
+class ejercicio3TestCase(unittest.TestCase):
 
     def test_is_menosUno_generaMatriz(self):
-        self.assertEquals(ejercicio3.is_generarMatrizTriangular(-1))
+        self.assertEquals(ejercicio3.generarMatrizTriangular(-1),[])
 
     def test_is_cero_generaMatriz(self):
-        self.assertEquals(ejercicio3.is_generarMatrizTriangular(0))
+        self.assertEquals(ejercicio3.generarMatrizTriangular(0),[])
 
     def test_is_uno_generaMatriz(self):
-        self.assertEquals(ejercicio3.is_generarMatrizTriangular(1))
+        self.assertEquals(ejercicio3.generarMatrizTriangular(1),[])
 
     def test_is_dos_generaMatriz(self):
-        self.assertEquals(ejercicio3.is_generarMatrizTriangular(2))
+        self.assertEquals(ejercicio3.generarMatrizTriangular(2))
 
     def test_is_tres_generaMatriz(self):
-        self.assertEquals(ejercicio3.is_generarMatrizTriangular(3))
+        self.assertEquals(ejercicio3.generarMatrizTriangular(3))
 
     def test_is_cuatro_generaMatriz(self):
-        self.assertEquals(ejercicio3.is_generarMatrizTriangular(4))
+        self.assertEquals(ejercicio3.generarMatrizTriangular(4))
 
     def test_is_cuatroString_generaMatriz(self):
-        self.assertEquals(ejercicio3.is_generarMatrizTriangular("4"))
+        self.assertEquals(ejercicio3.generarMatrizTriangular("4"),[])
 
     def test_is_pepeString_generaMatriz(self):
-        self.assertEquals(ejercicio3.is_generarMatrizTriangular("PEPE"))
+        self.assertEquals(ejercicio3.generarMatrizTriangular("PEPE"),[])
 
     def test_is_dosYUnMedio_generaMatriz(self):
-        self.assertEquals(ejercicio3.is_generarMatrizTriangular(2.5))
+        self.assertEquals(ejercicio3.generarMatrizTriangular(2.5),[])
+
+unittest
