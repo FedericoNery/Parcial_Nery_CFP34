@@ -24,13 +24,23 @@ class ejercicio3TestCase(unittest.TestCase):
         self.assertEquals(ejercicio3.generarMatrizTriangular(1),[])
 
     def test_is_dos_generaMatriz(self):
-        self.assertEquals(ejercicio3.generarMatrizTriangular(2))
+        self.assertEquals((ejercicio3.generarMatrizTriangular(2))[1][0],0)
 
     def test_is_tres_generaMatriz(self):
-        self.assertEquals(ejercicio3.generarMatrizTriangular(3))
+
+        for h in range(0,3):
+            for i in range(0,3):
+                if ((h > 0) and (h - i > 0)):
+                    self.assertEquals(ejercicio3.generarMatrizTriangular(3)[h][i], 0)
+                #else:
+
+
 
     def test_is_cuatro_generaMatriz(self):
-        self.assertEquals(ejercicio3.generarMatrizTriangular(4))
+        for h in range(0,4):
+            for i in range(0,4):
+                if ((h > 0) and (h - i > 0)):
+                    self.assertEquals(ejercicio3.generarMatrizTriangular(4)[h][i], 0)
 
     def test_is_cuatroString_generaMatriz(self):
         self.assertEquals(ejercicio3.generarMatrizTriangular("4"),[])
