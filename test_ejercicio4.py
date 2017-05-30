@@ -18,11 +18,12 @@ campeonato = [("a",1,"b",-2),("a",1,"c",1),("c",1,"b",1),("d",1,"a",9)]
 print(ejercicio4(campeonato)) # a
 """
 
-class ejercicio4TestCase(unittest.TestCase):
-    def test_is_vacio_seDeterminaCampeon(self):
+class DeterminoGanadorDeLaLigaTestCase(unittest.TestCase):
+
+    def test_devuelveStringVacioSiElArgumentoEsUnaListaVacia(self):
         self.assertEquals(ejercicio4.calcularGanadorDeLiga([]),"")
 
-    def test_is__a1_b0__seDeterminaCampeon(self):
+    def test_devuelveCaracter_a_SiElArgumentoEsUnSoloPartido(self):
         self.assertEquals(ejercicio4.calcularGanadorDeLiga([("a",1,"b",0)]),'a')
 
     def test_is__a1_b1__a1_c1__c1_b1__seDeterminaCampeon(self):
