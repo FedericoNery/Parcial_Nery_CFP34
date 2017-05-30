@@ -1,17 +1,6 @@
 import unittest
 import ejercicio2
 
-"""
-print(ejercicio2('/home/user/listado.txt',['mp3','wav','mpeg'])) # False
-print(ejercicio2('/home/user/listado.txt',['mp3','wav','mpeg','txt'])) # True
-print(ejercicio2('/home/user/listado.txt',['mp3','wav','mpeg','TXT'])) # True
-print(ejercicio2('/home/user/listado.tXt',['mp3','wav','mpeg','TXT'])) # True
-print(ejercicio2('/home/user/listado.txt',['txt'])) # True
-print(ejercicio2('/home/user/listado',['mp3','wav','mpeg','txt'])) # False
-print(ejercicio2('/home/user/listado',[])) # False
-print(ejercicio2('',[])) # False
-"""
-
 class VerificoSiElFormatoDeLaExtensionEsValidoTestCase(unittest.TestCase):
 
     def test_devuelveFalsoSiLaExtension_txt_NoSeEncuentraEnLaListaDeExtensiones(self):

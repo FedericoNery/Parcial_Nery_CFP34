@@ -1,16 +1,5 @@
 import unittest
 import ejercicio1
-"""
-print(ejercicio1("",[1,2,3])) # []
-print(ejercicio1(-1,[1,2,3])) # []
-print(ejercicio1(0,[1,2,3])) # []
-print(ejercicio1(0,[])) # []
-print(ejercicio1(1,[1,2])) # [1]
-print(ejercicio1(2,[1,-2])) # [1,-2]
-print(ejercicio1(8,[1,7,2,-4,6,9])) # [1,2,-4]
-print(ejercicio1(331,[1,2,3,7,147,331,518])) # [1,331]
-"""
-
 
 class GenerarListaDivisoresTestCase(unittest.TestCase):
 
@@ -37,5 +26,3 @@ class GenerarListaDivisoresTestCase(unittest.TestCase):
 
     def test_devuelveUnoYTrescientosTreintaYUnoSiElDividendoEsTrescientosTreintaYUno(self):
         self.assertEquals(ejercicio1.generarListaDivisores(331,[1,2,3,7,147,331,518]),[1,331])
-
-unittest

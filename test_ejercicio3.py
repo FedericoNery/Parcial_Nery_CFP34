@@ -1,16 +1,5 @@
 import unittest
 import ejercicio3
-"""
-print(ejercicio3(-1)) # []
-print(ejercicio3(0)) # []
-print(ejercicio3(1)) # []
-print(ejercicio3(2)) # [[x,x],[0,x]]
-print(ejercicio3(3)) # [[x,x,x],[0,x,x],[0,0,x]]
-print(ejercicio3(4)) # [[x,x,x,x],[0,x,x,x],[0,0,x,x],[0,0,0,x]]
-print(ejercicio3("4")) #[]
-print(ejercicio3("PEPE")) #[]
-print(ejercicio3(2.5)) #[]
-"""
 
 class VerificoGeneracionCorrectaDeMatricesTestCase(unittest.TestCase):
 
@@ -48,5 +37,3 @@ class VerificoGeneracionCorrectaDeMatricesTestCase(unittest.TestCase):
 
     def test_devuelveUnaListaVaciaSiElNumeroEsUnFlotante(self):
         self.assertEquals(ejercicio3.generarMatrizTriangular(2.5),[])
-
-unittest
